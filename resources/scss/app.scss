@@ -63,12 +63,12 @@ header {
             padding: 0 1rem;
             line-height: 80px;
             &.active {
-                // color: $blue;
+                color: $blue;
             }
             }
             &:hover {background-color: rgb(221, 221, 221);}
             &.active {
-                border-bottom: 3px solid $blue;
+                border-bottom: 5px solid $blue;
             }
         }
         
