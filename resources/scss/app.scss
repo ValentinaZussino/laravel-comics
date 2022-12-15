@@ -106,3 +106,51 @@ header {
         }
     }
 }
+.load_button {
+    background-color: $blue;
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.bottom-footer {
+    background-color: $darkgray;
+    div.container {
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+        background-color: transparent;
+        border: 2px solid $blue;
+        color: white;
+        text-transform: uppercase;
+        padding: 15px;
+        }
+
+        > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+            text-transform: uppercase;
+            color: $blue;
+            font-weight: bold;
+            padding-right: 20px;
+            }
+            a {padding-right: 0.8rem; 
+                img {
+                    width:30px;
+                    cursor: pointer;
+
+                    &:hover{
+                        filter: brightness(0) invert(1);
+                    }
+                }   
+            }
+        }
+    }
+    
+}

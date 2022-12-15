@@ -6,7 +6,7 @@
         </div>
     </div>
     <div class="container container-header">
-        <a href="#" id="top-logo">
+        <a href="{{route('home')}}" id="top-logo">
             <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="DC logo">
         </a>
         <nav>

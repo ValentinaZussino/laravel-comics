@@ -13,9 +13,14 @@
                 <img src="{{$item['thumb']}}" alt="">
             </div>
             <div class="text_card">
-                <p class="text-white">{{$item['title']}}</p>
+                <p class="text-white">{{$item['series']}}</p>
             </div>
         </div>
         @endforeach
+    </div>
+    <div class="d-flex justify-content-center align-content-center">
+        <div class="load_button">
+            <span class="text-white text-uppercase">load more</span>
+        </div>
     </div>
 @endsection
