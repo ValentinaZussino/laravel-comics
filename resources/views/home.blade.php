@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+    {{-- jumbo --}}
+    <div class="jumbo">
+        <img src="{{Vite::asset('resources/img/jumbotron.jpg')}}" alt="">
+    </div>
     {{-- stampa comics --}}
     <ul class="comic-list">
         @foreach ($comics as $item)
