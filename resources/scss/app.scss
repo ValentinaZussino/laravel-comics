@@ -1,9 +1,5 @@
+@use './partials/variables' as *;
 @import '~bootstrap/scss/bootstrap';
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
     font-family: 'Roboto', sans-serif;
     background-color: black;
@@ -16,6 +12,28 @@ img {
     margin: 0 auto;
     padding: 2rem;
     display: flex;
+}
+.blue_header {
+    background-color: $blue;
+    width: 100%;
+    height: 25px;
+
+    div.blue_container {
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding-right: 2rem;
+
+        div {
+            padding: 5px 20px;
+            color: white;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+    }
+    
 }
 header {
     background-color: white;
@@ -41,16 +59,16 @@ header {
             font-weight: 600;
             font-size: 13px;
             text-transform: uppercase;
-            color: rgb(57, 57, 57);
+            color: $darkgray;
             padding: 0 1rem;
             line-height: 80px;
             &.active {
-                // color: blue;
+                // color: $blue;
             }
             }
             &:hover {background-color: rgb(221, 221, 221);}
             &.active {
-                border-bottom: 3px solid blue;
+                border-bottom: 3px solid $blue;
             }
         }
         
@@ -69,7 +87,7 @@ header {
     .vz_card{
         width: calc((100% - 120px) / 6);
         margin: 10px;
-        
+
         .img_card {
             height: 200px;
             overflow-y: hidden;
@@ -78,6 +96,13 @@ header {
                 width: 100%;
             }
 
+        }
+        .text_card {
+            padding: 8px;
+            p{
+                text-transform: uppercase;
+                font-size: 13px;
+            } 
         }
     }
 }

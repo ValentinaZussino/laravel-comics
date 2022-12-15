@@ -1,4 +1,10 @@
 <header>
+    <div class="blue_header">
+        <div class="blue_container">
+            <div>dc power visa</div>
+            <div>additional dc sites</div>
+        </div>
+    </div>
     <div class="container container-header">
         <a href="#" id="top-logo">
             <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="DC logo">

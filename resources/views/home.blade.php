@@ -12,7 +12,7 @@
             <div class="img_card">
                 <img src="{{$item['thumb']}}" alt="">
             </div>
-            <div>
+            <div class="text_card">
                 <p class="text-white">{{$item['title']}}</p>
             </div>
         </div>
